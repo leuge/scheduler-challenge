@@ -175,9 +175,16 @@ function renderTodos(list) {
 }
 
 $('#add-to-do').on('click', function(event) {
-
+  event.preventDefault();
+  var todo = $('#to-do').val().trim();
+  list.push(todo);
+  localStorage.setItem('todolist', list);
 });
 
+$(document).on('click', '.checkbox', function() {
+
+  
+})
 
 </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
