@@ -141,7 +141,45 @@
     /></span>
   </form>
 
+  <hr />
 
+  <!--To Do List-->
+  <div id="to-dos"></div>
+
+  <!--JQuery-->
+*add script src
+
+<!--Script-->
+<script type="text/javascript">
+
+var list = JSON.parse(localStorage.getItem('todolist')) || [];
+
+function renderTodos(list) {
+  $('#to-dos').empty();
+
+  for (var i = 0; i < list.length; i++) {
+    var toDoItem = $('<p>');
+      toDoItem.text(list[i]);
+
+      var toDoClose = $('<button>');
+        toDoClose.attr('data-to-do', i);
+
+        toDoClose.addClass('checkbox');
+
+        toDoClose.text('check');
+
+        toDoItem = toDoItem.prepend(toDoClose);
+
+        $('#to-dos').append(toDoItem);
+  }
+}
+
+$('#add-to-do').on('click', function(event) {
+
+});
+
+
+</script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
