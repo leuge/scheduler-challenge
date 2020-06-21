@@ -30,203 +30,175 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="row">
-        <div class="col-1">
-          5AM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          6AM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          7AM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          8AM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          9AM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          10AM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          11AM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          12PM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          1PM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          2PM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          3PM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          4PM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1">
-          5PM
-        </div>
-        <div class="col-6">
-          2 of 3 (wider)
-        </div>
-        <div class="col-3">
-          3 of 3
-        </div>
-      </div>
-      </div>  
-
-<!--input form-->
-      <form>
-        <span id="todo-item"
-        >To Do Item: <input id="to-do" type="text"/><input
-        id="add-to-do"
-        value="Add Item"
-        type="submit"
-      /></span>
-      </form>
-    <!--to-do-->
-    <div id="to-dos"></div>
-<!--Script-->
-    <script type="text/javascript">
-    var lsit=JSON.parse(localStorage.getItem('todolist')) || [];
-    function renderTodos(list) {
-
-      $('#to-dos').empty();
-
-      for (var i = 0; i < list.length; i++) {
-        var toDoItem = $('<p>');
-          toDoItem.text(list[i]);
-
-          var toDoClose = $('<button>');
-          toDoClose.attr('data-to-do', i);
-
-          toDoClose.addClass('checkbox');
-
-          toDoClose.text(check);
-
-          toDoItem = toDoItem.prepend(toDoClose);
-
-          $('#to-dos').append(toDoItem);
-      }
-    }
-
-    $('#add-to-do').on('click', function(event){
-      event.preventDefault();
-      
-    })
-    </script>
-
-    <!--in-grogress-->
-      <div id="in-progress"></div>
-    <!--done-->
-      <div id="done"></div>
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
+        <div class="row">
+            <div class="col">
+             1 of 3
+            </div>
+            <div class="col-6">
+            2 of 3 (wider)
+            </div>
+            <div class="col">
+            3 of 3
+            </div> 
+        </div>  
     </div>
+    
+  <!--Input Form-->
+  <form>
+    <span id="todo-item"
+    >To Do Item: <input id="to-do" type="text"/><input
+    id="add-to-do"
+    value="Add Item"
+    type="submit"
+    /></span>
+  </form>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <hr />
+
+  <!--To Do List-->
+  <div id="to-dos"></div>
+
+  <!--JQuery-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!--Script-->
+<script type="text/javascript">
+
+var list = JSON.parse(localStorage.getItem('todolist')) || [];
+
+function renderTodos(list) {
+  $('#to-dos').empty();
+
+  for (var i = 0; i < list.length; i++) {
+    var toDoItem = $('<p>');
+      toDoItem.text(list[i]);
+
+      var toDoClose = $('<button>');
+        toDoClose.attr('data-to-do', i);
+
+        toDoClose.addClass('checkbox');
+
+        toDoClose.text('check');
+
+        toDoItem = toDoItem.prepend(toDoClose);
+
+        $('#to-dos').append(toDoItem);
+  }
+}
+
+$('#add-to-do').on('click', function(event) {
+  event.preventDefault();
+
+  var todoTask = $('#to-do')
+  .val()
+  .trim();
+
+  list.push(todo);
+
+  renderToDos(list);
+
+  localStorage.setItem('todolist', JSON.stringify(list));
+
+  $('#to-do').val('');
+});
+
+$(document).on('click', '.checkbox', function() {
+  var toDoNumber = $(this).attr('data-to-do');  
+  list.splice(toDoNumber, 1);
+  renderTodos(list);
+  localStorage.setItem('todolist', JSON.stringify(list));
+});
+
+renderTodos(list);
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
-
-
-
-
