@@ -1,3 +1,8 @@
+var date = moment().toDate();
+moment(testDate).format('MM/DD/YYYY');
+    var eDisplayDate = document.getElementById('displayJsDate');
+    eDisplayDate.innerHTML = NowDate;
+
 var list = JSON.parse(localStorage.getItem('todolist')) || [];
 
     function renderTodos(list) {
@@ -44,3 +49,4 @@ var list = JSON.parse(localStorage.getItem('todolist')) || [];
     });
 
     renderTodos(list);
+

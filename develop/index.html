@@ -11,13 +11,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Work Day Scheduler</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
 </head>
 
 <body>
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
+    <p id="currentDay" class="lead">
+      <div id="displayJsDate"></div>
+    </p>
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
@@ -150,7 +153,7 @@
 
   <!--Input Form-->
   <form>
-    <span id="todo-item">To Do Item: <input id="to-do" type="text" /><input id="add-to-do" value="Add Item"
+    <span id="todo-item">To Do Item:<input id="to-do" type="text" /><input id="add-to-do" value="Add Item"
         type="submit" /></span>
   </form>
 
